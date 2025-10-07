@@ -1,0 +1,57 @@
+.trailer-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  items-align: center;
+  align-items: center;
+  background: #000;
+  position: relative;
+  
+  padding-bottom: 40px;
+}
+
+.trailer-video {
+  width: 90%;
+  max-width: 1200px;
+  height: 610px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px #ffff;
+  background: #333;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+
+.trailer-content {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.trailer-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.trailer-content p {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  .trailer-video {
+    width: 100%;
+  }
+
+  .trailer-content h1 {
+    font-size: 2rem;
+  }
+
+  .trailer-content p {
+    font-size: 1.2rem;
+  }
+}
